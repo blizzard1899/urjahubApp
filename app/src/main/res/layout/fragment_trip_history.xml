@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TripHistory">
+
+    <RelativeLayout
+        android:id="@+id/Rl_no_trips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_Ebike"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:padding="4dp"
+            android:src="@drawable/e_cycle_image" />
+
+        <TextView
+            android:id="@+id/txt_Notrips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_Ebike"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/notrips"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

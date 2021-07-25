@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activity.Login">
+
+
+    <TextView
+        android:id="@+id/txt_Continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="5dp"
+        android:text="Continue by signing in"
+        android:textColor="#050505"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Continue"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Email"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_Password"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/forgot_password"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_Log_In"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="8dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txt_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Log_In"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="5dp"
+        android:text="@string/or"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lL_btn_Google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="5dp"
+        android:text="@string/sign_up"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_Email"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="8dp"
+        android:text="@string/email"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/lL_btn_Google"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/txt_or"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:src="@drawable/btn_google" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="5dp"
+            android:text="@string/sign_in_with_google"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
